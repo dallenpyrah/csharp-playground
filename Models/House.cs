@@ -24,6 +24,7 @@ namespace csharp_playground.Models
 
         public int GuestLimit { get; set; }
 
+        [Required]
         public string Image { get; set; }
         [Range(0, 5)]
         public int Reviews { get; set; }
@@ -31,6 +32,10 @@ namespace csharp_playground.Models
         public string DateAvaliable { get; set; }
 
         public bool SuperHost { get; set; }
-        
+
+        public string CreatorId { get; set; }
+
+        public Profile Creator { get; set; }
+
     }
 }
